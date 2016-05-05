@@ -92,7 +92,7 @@ function change_colors
         j=$(($j + 1))
      done
 
-     COLCOUNT=$(( $COLCOUNT + 2 ))
+     COLCOUNT=$(( $COLCOUNT + 1 ))
      PS1="${debian_chroot:+($debian_chroot)}${FINAL1}\n\[$(tput bold)\]${FINAL2} \[\e[0m\]"
 }
 PROMPT_COMMAND=change_colors
